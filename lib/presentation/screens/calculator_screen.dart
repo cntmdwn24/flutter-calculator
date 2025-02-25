@@ -1,3 +1,4 @@
+import 'package:calculator/presentation/widgets/custom_calculator_button.dart';
 import 'package:flutter/material.dart';
 
 class CalculatorScreen extends StatelessWidget {
@@ -10,98 +11,41 @@ class CalculatorScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Spacer(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(
-                width: 80,
-                height: 80,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey
-                  ),
-                  child: Text(
-                    '8',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text('8'),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text('8'),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text('8'),
-              ),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                '7',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '6',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '5',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '4',
-                style: TextStyle(color: Colors.white),
-              ),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                '7',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '6',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '5',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '4',
-                style: TextStyle(color: Colors.white),
-              ),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                '7',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '6',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '5',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text(
-                '4',
-                style: TextStyle(color: Colors.white),
-              ),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
+              CustomCalculatorButton(),
             ],
           )
         ],
