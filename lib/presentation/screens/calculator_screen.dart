@@ -13,39 +13,100 @@ class CalculatorScreen extends StatelessWidget {
         children: [
           Spacer(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
+              Padding(
+                padding: const EdgeInsets.all(15),
+                child: Text(
+                  '0',
+                  style: TextStyle(color: Colors.white, fontSize: 75),
+                ),
+              ),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
+              CustomCalculatorButton(
+                buttonText: 'AC',
+              ),
+              CustomCalculatorButton(
+                buttonText: '+/-',
+              ),
+              CustomCalculatorButton(
+                buttonText: '%',
+              ),
+              CustomCalculatorButton(
+                buttonText: '%',
+              ),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
+              CustomCalculatorButton(
+                buttonText: '7',
+              ),
+              CustomCalculatorButton(
+                buttonText: '8',
+              ),
+              CustomCalculatorButton(
+                buttonText: '9',
+              ),
+              CustomCalculatorButton(
+                buttonText: 'X',
+              ),
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
-              CustomCalculatorButton(),
+              CustomCalculatorButton(
+                buttonText: '4',
+              ),
+              CustomCalculatorButton(
+                buttonText: '5',
+              ),
+              CustomCalculatorButton(
+                buttonText: '6',
+              ),
+              CustomCalculatorButton(
+                buttonText: '-',
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomCalculatorButton(
+                buttonText: '1',
+              ),
+              CustomCalculatorButton(
+                buttonText: '2',
+              ),
+              CustomCalculatorButton(
+                buttonText: '3',
+              ),
+              CustomCalculatorButton(
+                buttonText: '+',
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomCalculatorButton(
+                buttonText: '계',
+              ),
+              CustomCalculatorButton(
+                buttonText: '0',
+              ),
+              CustomCalculatorButton(
+                buttonText: '.',
+              ),
+              CustomCalculatorButton(
+                buttonText: '=',
+              ),
             ],
           )
         ],
