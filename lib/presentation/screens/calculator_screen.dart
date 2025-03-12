@@ -96,10 +96,8 @@ class CalculatorScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomCalculatorButton(
-                buttonText: '계',
-              ),
-              CustomCalculatorButton(
                 buttonText: '0',
+                isZero: true,
               ),
               CustomCalculatorButton(
                 buttonText: '.',
